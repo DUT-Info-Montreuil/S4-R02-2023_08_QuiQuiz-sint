@@ -2,6 +2,7 @@ package fr.iut.montreuil.S4_R02_2023_08.quiquiz_sint.impl;
 
 import fr.iut.montreuil.S4_R02_2023_08.quiquiz_sint.modeles.IServicesQuiQuizJoueur;
 import fr.iut.montreuil.S4_RO2_2023_08.joueur_sme.entities.dto.JoueurDTO;
+import fr.iut.montreuil.S4_RO2_2023_08.joueur_sme.entities.dto.StatsDTO;
 import fr.iut.montreuil.S4_RO2_2023_08.joueur_sme.impl.ServiceJoueurImpl;
 
 import java.util.HashMap;
@@ -18,7 +19,16 @@ public class ServiceQuiQuizJoueurImpl implements IServicesQuiQuizJoueur {
         List<JoueurDTO> list = serv.listerJoueurs();
 
         for(JoueurDTO j : list) {
-            List<Integer>
+            int nbParties = 0;
+            int nbQuestions = 0;
+            int nbBonnesRéponses = 0;
+            int tempsTotal = 0;
+            for(StatsDTO s : j.getStatsParties()) {
+                nbParties++;
+                nbQuestions += s.getNbQuestions();
+                nbBonnesRéponses += s.getNbBonnesReponses();
+                tempsTotal += s.getTemps();
+            }
         }
         return map;
     }
