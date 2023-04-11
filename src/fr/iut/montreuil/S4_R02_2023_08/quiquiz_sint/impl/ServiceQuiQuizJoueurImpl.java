@@ -5,6 +5,7 @@ import fr.iut.montreuil.S4_RO2_2023_08.joueur_sme.entities.dto.JoueurDTO;
 import fr.iut.montreuil.S4_RO2_2023_08.joueur_sme.entities.dto.StatsDTO;
 import fr.iut.montreuil.S4_RO2_2023_08.joueur_sme.impl.ServiceJoueurImpl;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -29,6 +30,14 @@ public class ServiceQuiQuizJoueurImpl implements IServicesQuiQuizJoueur {
                 nbBonnesRéponses += s.getNbBonnesReponses();
                 tempsTotal += s.getTemps();
             }
+
+            List<Integer> listStats = new ArrayList<Integer>();
+
+            listStats.add(nbParties);
+            listStats.add(nbQuestions);
+            listStats.add(nbBonnesRéponses);
+            listStats.add(tempsTotal);
+             map.put(j.getPseudo(), listStats);
         }
         return map;
     }
