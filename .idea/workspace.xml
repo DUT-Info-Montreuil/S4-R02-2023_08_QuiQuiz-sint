@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="37c91e3f-ddd9-425b-a9a7-0f889c03d290" name="Changes" comment="En cours de développement de la fonction recupStatsJoueurs">
+      <change beforePath="$PROJECT_DIR$/src/fr/iut/montreuil/S4_R02_2023_08/quiquiz_sint/impl/ServiceQuiQuizJoueurImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/iut/montreuil/S4_R02_2023_08/quiquiz_sint/impl/ServiceQuiQuizJoueurImpl.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2NjkBzRtI0qIlHrDAB7ZczfGNwp" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="37c91e3f-ddd9-425b-a9a7-0f889c03d290" name="Changes" comment="" />
+      <created>1680184747482</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1680184747482</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Création des directory et ajout de la dépendance à Joueur_sme">
+      <created>1680187517836</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1680187517836</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Ajout de directory">
+      <created>1680188635280</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1680188635280</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Suppression de test et début du développement de ServiceQuiQuizJoueurImpl">
+      <created>1680189944047</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1680189944047</updated>
+    </task>
+    <task id="LOCAL-00004" summary="En cours de développement de la fonction recupStatsJoueurs">
+      <created>1680190198017</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1680190198017</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Création des directory et ajout de la dépendance à Joueur_sme" />
+    <MESSAGE value="Ajout de directory" />
+    <MESSAGE value="Suppression de test et début du développement de ServiceQuiQuizJoueurImpl" />
+    <MESSAGE value="En cours de développement de la fonction recupStatsJoueurs" />
+    <option name="LAST_COMMIT_MESSAGE" value="En cours de développement de la fonction recupStatsJoueurs" />
+  </component>
+</project>
