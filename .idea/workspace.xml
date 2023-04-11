@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37c91e3f-ddd9-425b-a9a7-0f889c03d290" name="Changes" comment="En cours de développement de la fonction recupStatsJoueurs">
+    <list default="true" id="37c91e3f-ddd9-425b-a9a7-0f889c03d290" name="Changes" comment="recupStatsJoueurs terminées">
+      <change afterPath="$PROJECT_DIR$/src/fr/iut/montreuil/S4_R02_2023_08/quiquiz_sint/entities/dto/StatsSintDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/fr/iut/montreuil/S4_R02_2023_08/quiquiz_sint/impl/ServiceQuiQuizJoueurImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/iut/montreuil/S4_R02_2023_08/quiquiz_sint/impl/ServiceQuiQuizJoueurImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/iut/montreuil/S4_R02_2023_08/quiquiz_sint/modeles/IServicesQuiQuizJoueur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/iut/montreuil/S4_R02_2023_08/quiquiz_sint/modeles/IServicesQuiQuizJoueur.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +79,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680190198017</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="recupStatsJoueurs terminées">
+      <created>1681217382071</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1681217382071</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -95,6 +105,7 @@
     <MESSAGE value="Ajout de directory" />
     <MESSAGE value="Suppression de test et début du développement de ServiceQuiQuizJoueurImpl" />
     <MESSAGE value="En cours de développement de la fonction recupStatsJoueurs" />
-    <option name="LAST_COMMIT_MESSAGE" value="En cours de développement de la fonction recupStatsJoueurs" />
+    <MESSAGE value="recupStatsJoueurs terminées" />
+    <option name="LAST_COMMIT_MESSAGE" value="recupStatsJoueurs terminées" />
   </component>
 </project>

@@ -1,21 +1,21 @@
 package fr.iut.montreuil.S4_R02_2023_08.quiquiz_sint.impl;
 
+import fr.iut.montreuil.S4_R02_2023_08.quiquiz_sint.entities.dto.StatsSintDTO;
 import fr.iut.montreuil.S4_R02_2023_08.quiquiz_sint.modeles.IServicesQuiQuizJoueur;
 import fr.iut.montreuil.S4_RO2_2023_08.joueur_sme.entities.dto.JoueurDTO;
 import fr.iut.montreuil.S4_RO2_2023_08.joueur_sme.entities.dto.StatsDTO;
 import fr.iut.montreuil.S4_RO2_2023_08.joueur_sme.impl.ServiceJoueurImpl;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 public class ServiceQuiQuizJoueurImpl implements IServicesQuiQuizJoueur {
     @Override
-    public Map<String, List<Integer>> recupStatsJoueurs() {
+    public Map<String, StatsSintDTO> recupStatsJoueurs() {
         ServiceJoueurImpl serv = new ServiceJoueurImpl();
 
-        Map<String, List<Integer>> map = new HashMap<String, List<Integer>>();
+        Map<String, StatsSintDTO> map = new HashMap<String, StatsSintDTO>();
 
         List<JoueurDTO> list = serv.listerJoueurs();
 
@@ -31,14 +31,22 @@ public class ServiceQuiQuizJoueurImpl implements IServicesQuiQuizJoueur {
                 tempsTotal += s.getTemps();
             }
 
-            List<Integer> listStats = new ArrayList<Integer>();
-
-            listStats.add(nbParties);
-            listStats.add(nbQuestions);
-            listStats.add(nbBonnesRéponses);
-            listStats.add(tempsTotal);
-             map.put(j.getPseudo(), listStats);
+            int[] moyennes = calculeMoyenneNbReponsesEtTemps(nbParties, nbBonnesRéponses, tempsTotal);
+            StatsSintDTO stats = new StatsSintDTO(nbParties, nbQuestions, nbBonnesRéponses, tempsTotal, moyennes[0], moyennes[1]);
+            map.put(j.getPseudo(), stats);
         }
         return map;
+    }
+
+    private int[] calculeMoyenneNbReponsesEtTemps(int nbPartiesJouees, int nbBonnesReponsesTot, int tempsTot) {
+        int nbBonnesReponsesMoy =  nbBonnesReponsesTot/nbPartiesJouees;
+        int tempsMoy = tempsTot/nbPartiesJouees;
+
+        int[] tabMoy = new int[2];
+
+        tabMoy[0] = nbBonnesReponsesMoy;
+        tabMoy[1] = tempsMoy;
+
+        return tabMoy;
     }
 }
